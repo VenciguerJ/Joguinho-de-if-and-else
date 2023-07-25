@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jean Vencigueri">
+    <title>Joguinho de números</title>
+</head>
+<body>
+
+    <div class="alert">
+        <h1>Jogo de JS</h1>
+    </div>
+    <script>
+        
+        var n1 = parseInt(prompt('escolha um número:'));
+        var n2 = parseInt(prompt('escolha um número:'));
+
+        var jogo = parseInt(Math.random() * 2);
+        
+        alert('o número sorteado foi ' + jogo)
+
+       
+        if (n1 == n2){
+            alert('empate!');
+        }
+        else{
+            if (jogo == 1){
+                if (n1 > n2){
+                    alert('jogador 1 venceu')
+                }
+                else{
+                    alert('jogaador 2 venceu')
+                }
+            }
+            else{
+                if (n1 < n2){
+                    alert('jogador 1 venceu')
+                }
+                else{
+                    alert('jogador 2 venceu')
+                }
+            }
+
+        }
+    </script>
+</body>
+</html>
